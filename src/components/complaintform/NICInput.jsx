@@ -1,5 +1,12 @@
+import { Input } from 'antd';
+
 export default function NICInput() {
-    return (
-      <input type="text" placeholder="NIC No" name="nic" />
-    );
-  }
+  return (
+    <Input
+      name="nic"
+      placeholder="NIC No"
+      size="large"
+      className="input-custom"
+    />
+  );
+}

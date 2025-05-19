@@ -1,5 +1,12 @@
+import { Input } from 'antd';
+
 export default function ApartmentInput() {
-    return (
-      <input type="text" placeholder="Apartment No" name="apartmentNo" />
-    );
-  }
+  return (
+    <Input
+      name="apartmentNo"
+      placeholder="Apartment No"
+      size="large"
+      className="input-custom"
+    />
+  );
+}

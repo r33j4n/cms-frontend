@@ -1,8 +1,16 @@
+import { Select } from 'antd';
+
 export default function TypeDropdown() {
-    return (
-      <select name="type">
-        <option value="complaint">Complaint</option>
-        <option value="suggestion">Suggestion</option>
-      </select>
-    );
-  }
+  return (
+    <Select
+      defaultValue="complaint"
+      size="large"
+      style={{ width: '100%' }}
+      options={[
+        { value: 'complaint', label: 'Complaint' },
+        { value: 'suggestion', label: 'Suggestion' },
+      ]}
+      className="input-custom"
+    />
+  );
+}

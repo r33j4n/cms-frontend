@@ -1,10 +1,14 @@
+import { Input } from 'antd';
+
 export default function ComplaintTextarea() {
-    return (
-      <textarea
-        placeholder="Write the Complaint/Suggestion Here"
-        name="complaintText"
-        rows={6}
-        cols={40}
-      />
-    );
-  }
+  return (
+    <Input.TextArea
+      rows={6}
+      name="complaintText"
+      placeholder="Write the Complaint/Suggestion Here"
+      className="textarea-custom"
+      maxLength={600}
+      showCount
+    />
+  );
+}
