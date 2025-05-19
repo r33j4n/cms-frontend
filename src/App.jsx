@@ -1,14 +1,21 @@
-import React, { useState } from 'react'
 import './App.css'
-import ComplaintForm from './components/complaintform/complaintform'
 import ComplaintPage from './pages/ComplaintPortalPage'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import NavBar from './components/navbar/NavBar'
+import AdminLoginPage from './pages/AdminLoginPage'
 
 function App() {
 
   return (
-   <React.Fragment>
-     <ComplaintPage/>
-   </React.Fragment>
+   <BrowserRouter>
+   <NavBar/>
+    <Routes>
+    <Route path="/complaint" element={<ComplaintPage/>} />
+    <Route path="/" element={<HomePage/>} />
+    <Route path="/admin-login" element={<AdminLoginPage/>} />
+    </Routes>
+   </BrowserRouter>
   )
 }
 
