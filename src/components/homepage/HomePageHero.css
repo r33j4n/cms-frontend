@@ -1,0 +1,102 @@
+/* Import fonts at the top if using css modules, or via index.html for global */
+.hero-bg {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(110deg, #002147 70%, #1677ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  margin-bottom: 0.6rem;
+  font-family: 'Inter', 'Poppins', Arial, sans-serif;
+}
+
+.hero-highlight {
+  font-size: 2.6rem;
+  color: #1677ff;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.hero-tagline {
+  font-size: 1.25rem;
+  color: #eee;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+}
+
+.hero-desc {
+  font-size: 1.17rem;
+  color: #c0d6f6;
+  margin-bottom: 2.3rem;
+  font-weight: 600;
+}
+
+.hero-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1.1rem;
+}
+
+.hero-btn {
+  font-size: 1.17rem;
+  padding: 0.7rem 2.2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(22, 119, 255, 0.10);
+  transition: all 0.15s;
+}
+
+.hero-btn-primary {
+  background: #1677ff !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.hero-btn-primary:hover {
+  background: #265eb3 !important;
+}
+
+.hero-btn-outline {
+  background: #fff !important;
+  color: #002147 !important;
+  border: 2px solid #1677ff !important;
+}
+
+.hero-btn-outline:hover {
+  color: #1677ff !important;
+  border-color: #265eb3 !important;
+}
+
+@media (max-width: 700px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .hero-highlight {
+    font-size: 1.3rem;
+  }
+  .hero-btn {
+    padding: 0.65rem 1.5rem;
+    font-size: 1rem;
+  }
+}
